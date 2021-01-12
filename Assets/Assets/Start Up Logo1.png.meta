@@ -1,0 +1,299 @@
+fileFormatVersion: 2
+guid: ce71ea331a7d9e54b8a1076a3bf2d734
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -3989376942150401536
+    second: Start Up Logo1_0
+  - first:
+      213: -2599512676145910588
+    second: Start Up Logo1_1
+  - first:
+      213: 2375974380828605814
+    second: Start Up Logo1_2
+  - first:
+      213: 3064991961741032443
+    second: Start Up Logo1_3
+  - first:
+      213: 8752078571159138252
+    second: Start Up Logo1_4
+  - first:
+      213: 9005295681721722263
+    second: Start Up Logo1_5
+  - first:
+      213: 3361784951248056165
+    second: Start Up Logo1_6
+  - first:
+      213: 2683468404553537424
+    second: Start Up Logo1_7
+  - first:
+      213: 6551948849655241214
+    second: Start Up Logo1_8
+  - first:
+      213: -7701030462829253841
+    second: Start Up Logo1_9
+  - first:
+      213: -1590232738231086369
+    second: Start Up Logo1_10
+  - first:
+      213: -8188302533808805432
+    second: Start Up Logo1_11
+  - first:
+      213: 2923367587926840132
+    second: Start Up Logo1_12
+  - first:
+      213: -92607246251222229
+    second: Start Up Logo1_13
+  - first:
+      213: 5042650815842046994
+    second: Start Up Logo1_14
+  - first:
+      213: -6404960346333056253
+    second: Start Up Logo1_15
+  - first:
+      213: -4722889332447417584
+    second: Start Up Logo1_16
+  - first:
+      213: -8804817987943444241
+    second: Start Up Logo1_17
+  - first:
+      213: 4755734391875457523
+    second: Start Up Logo1_18
+  - first:
+      213: 825813171553742525
+    second: Start Up Logo1_19
+  - first:
+      213: 705674932721102717
+    second: Start Up Logo1_20
+  - first:
+      213: -7751689333285752565
+    second: Start Up Logo1_21
+  - first:
+      213: 2300550639354533992
+    second: Start Up Logo1_22
+  - first:
+      213: -7243496420361567922
+    second: Start Up Logo1_23
+  - first:
+      213: 3177791632099837130
+    second: Start Up Logo1_24
+  - first:
+      213: 1554188642656775193
+    second: Start Up Logo1_0
+  - first:
+      213: 3808647371846856958
+    second: Start Up Logo1_1
+  - first:
+      213: 6573534712733224265
+    second: Start Up Logo1_5
+  - first:
+      213: -3256710896458373524
+    second: Start Up Logo1_6
+  - first:
+      213: 1364612387792961708
+    second: Start Up Logo1_7
+  - first:
+      213: -6210065736477708312
+    second: Start Up Logo1_8
+  - first:
+      213: 2150514946525400426
+    second: Start Up Logo1_9
+  - first:
+      213: -8154925125391844346
+    second: Start Up Logo1_10
+  - first:
+      213: -1560520526039677261
+    second: Start Up Logo1_11
+  - first:
+      213: 6330767849183953452
+    second: Start Up Logo1_12
+  - first:
+      213: 8135094100943967070
+    second: Start Up Logo1_13
+  - first:
+      213: 56919065405137252
+    second: Start Up Logo1_14
+  - first:
+      213: 9060216966407635262
+    second: Start Up Logo1_15
+  - first:
+      213: -1090602019800857310
+    second: Start Up Logo1_16
+  - first:
+      213: 7248343718460784788
+    second: Start Up Logo1_17
+  - first:
+      213: 4737566061235208703
+    second: Start Up Logo1_18
+  - first:
+      213: 4127403143427624612
+    second: Start Up Logo1_19
+  - first:
+      213: -6096318755586025487
+    second: Start Up Logo1_20
+  - first:
+      213: 7002984028859956164
+    second: Start Up Logo1_21
+  - first:
+      213: 4229407628904022765
+    second: Start Up Logo1_22
+  - first:
+      213: -6106228533260216278
+    second: Start Up Logo1_23
+  - first:
+      213: -7186878933275765851
+    second: Start Up Logo1_24
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: -1
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: -1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Start Up Logo1_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 133
+        height: 84
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 002cdf7cec2e2a8c0800000000000000
+      internalID: -3989376942150401536
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Start Up Logo1_1
+      rect:
+        serializedVersion: 2
+        x: 156
+        y: 22
+        width: 21
+        height: 29
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4cca23d6efcacebd0800000000000000
+      internalID: -2599512676145910588
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 3195886de9dc98c47b848a1a8c4ba4b2
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

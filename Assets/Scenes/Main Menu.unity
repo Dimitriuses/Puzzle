@@ -1381,6 +1381,7 @@ GameObject:
   - component: {fileID: 2004153957}
   - component: {fileID: 2004153956}
   - component: {fileID: 2004153958}
+  - component: {fileID: 2004153959}
   m_Layer: 5
   m_Name: StartLoad
   m_TagString: Untagged
@@ -1460,11 +1461,33 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ResizeControlImage: {fileID: 291481391}
+  Sprite: {fileID: -2599512676145910588, guid: ce71ea331a7d9e54b8a1076a3bf2d734, type: 3}
   UperText: {fileID: 1221289739}
+  UperTextRectTransform: {fileID: 1221289738}
   CenterText: {fileID: 1099158676}
   DownerText: {fileID: 2098404916}
   LoadStatus: 0
   StartBios: 0
+  FountSize: 0
+--- !u!95 &2004153959
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2004153954}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 0}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &2098404914
 GameObject:
   m_ObjectHideFlags: 0

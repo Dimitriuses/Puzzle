@@ -66,6 +66,7 @@ public class StartLoad : MonoBehaviour
         //UperTextRectTransform.rect.Set(UperTextRectTransform.rect.x, UperTextRectTransform.rect.y, UperTextRectTransform.rect.width, Iheight);
         UperTextRectTransform.sizeDelta = new Vector2(UperTextRectTransform.sizeDelta.x, Iheight);
         UperTextRectTransform.localPosition = new Vector3(UperTextRectTransform.localPosition.x, -Iheight, UperTextRectTransform.localPosition.z);
+        
         //Debug.Log(UperTextRectTransform.rect + " " + Iheight);
         //Debug.Log(UperText.fontScale);
     }

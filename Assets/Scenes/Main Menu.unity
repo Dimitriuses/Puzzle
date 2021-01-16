@@ -399,7 +399,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 69c16faef7c96ff4a811c6bfed7eaa39, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  OS: []
+  OSList:
+  - OS 0
+  - Windows 10 Enterprise
+  - Linux Ubuntu
   Text: {fileID: 1845407752}
 --- !u!114 &383017171
 MonoBehaviour:

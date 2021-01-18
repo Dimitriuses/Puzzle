@@ -9,6 +9,7 @@ public class GRUBMenu : MonoBehaviour
 {
     public List<string> OSList;
     public Text Text;
+    public Text Background;
 
     static char VERTICALINE = '│';
     static char HORISONTALINE = '─';
@@ -16,6 +17,7 @@ public class GRUBMenu : MonoBehaviour
     static char UPLEFTCOTNER = '┌';
     static char DOWNRIGHTCORNER = '┘';
     static char DOWNLEFTCORNER = '└';
+    static char SELECTEDCHAR = '█';
 
     string upBorderLine;
     string downBorderLine;
@@ -119,11 +121,14 @@ public class GRUBMenu : MonoBehaviour
         if (SelectId >= 0 && SelectId <= OSList.Count)
         {
             string tmpMenu = upBorderLine + "\n";
+            string tmpBackground = "\n";
             for(int i = 0; i <= MaxHeight - 2; i++)
             {
                 tmpMenu += RenderLine((OSList.Count > i) ? OSList[i] : "", i == SelectId) + "\n";
+                tmpBackground += RenderBackgroundMenu(i == SelectId);
             }
             Text.text = tmpMenu + downBorderLine;
+            Background.text = tmpBackground;
         }
     }
 
@@ -132,7 +137,7 @@ public class GRUBMenu : MonoBehaviour
         string TMPline = "" + VERTICALINE;
         if (selected)
         {
-            TMPline += "<mark=#ffffff><color=black>";
+            TMPline += "<color=black>";
         }
         TMPline += str;
         for (int i = 0; i <= MaxWidth-2-str.Length; i++)
@@ -141,9 +146,26 @@ public class GRUBMenu : MonoBehaviour
         }
         if (selected)
         {
-            TMPline += "</color></mark>";
+            TMPline += "</color>";
         }
         return TMPline + VERTICALINE;
+    }
+
+    private string RenderBackgroundMenu(bool selected)
+    {
+        string tmp = " ";
+        if (selected)
+        {
+            for (int i = 0; i <= MaxWidth - 2; i++)
+            {
+                tmp += SELECTEDCHAR;
+            }
+        }
+        else
+        {
+            tmp += "\n";
+        }
+        return tmp;
     }
 
     // Update is called once per frame

@@ -10,6 +10,7 @@ public class GRUBMenu : MonoBehaviour
     public List<string> OSList;
     public Text Text;
     public Text Background;
+    public Text Border;
 
     static char VERTICALINE = '│';
     static char HORISONTALINE = '─';
@@ -22,23 +23,8 @@ public class GRUBMenu : MonoBehaviour
     string upBorderLine;
     string downBorderLine;
 
-    int _selectId;
-    int SelectId { get { return _selectId; } set
-        {
-            if(value>=0 || value <= OSList.Count - 1)
-            {
-                _selectId = value;
-            }
-            else if( value < 0)
-            {
-                _selectId = OSList.Count - 1;
-            }
-            else if (value > OSList.Count)
-            {
-                _selectId = 0;
-            }
-            RenderMenu();
-        } }
+    //int _selectId;
+    int SelectId;
 
     int MaxHeight;
     int MaxWidth;
@@ -73,11 +59,26 @@ public class GRUBMenu : MonoBehaviour
     {
         MaxHeight = GetMaxLineCount(Text);
         MaxWidth = GetMaxCharLineCount(Text);
-        PreRenderBorder();
+        RenderBorder();
+        RenderMenu();
     }
-    private void OnSelectIdChange()
+    private void OnSelectIdChange(int value)
     {
-        
+        //Debug.Log(SelectId + " " + value + " " + OSList.Count);
+        if (value >= 0 && value < OSList.Count)
+        {
+            SelectId = value;
+        }
+        else if (value < 0)
+        {
+            SelectId = OSList.Count - 1;
+        }
+        else if (value >= OSList.Count)
+        {
+            SelectId = 0;
+        }
+        RenderMenu();
+
     }
 
     public static int GetMaxLineCount(Text text)
@@ -94,7 +95,7 @@ public class GRUBMenu : MonoBehaviour
             if (lineCount == nextLineCount) break;
             lineCount = nextLineCount;
         }
-        return lineCount - 1;
+        return lineCount * 2 - 2;
     }
     public static int GetMaxCharLineCount(Text text)
     {
@@ -105,15 +106,25 @@ public class GRUBMenu : MonoBehaviour
         return (int)(size.x / textGenerator.GetPreferredWidth(" ", generationSettings)) - 1;
     }
 
-    private void PreRenderBorder()
+    private void RenderBorder()
     {
-        upBorderLine = "";
-        downBorderLine = "";
-        for (int i = 0; i <= MaxWidth; i++)
+        string tmpBorder = "";
+        for (int i = 0; i <= MaxHeight; i++)
         {
-            upBorderLine += (i == 0) ? UPLEFTCOTNER : (i < MaxWidth) ? HORISONTALINE : UPRIGHTCORNER;
-            downBorderLine += (i == 0) ? DOWNLEFTCORNER : (i < MaxWidth) ? HORISONTALINE : DOWNRIGHTCORNER;
+            for (int j = 0; j <= MaxWidth; j++)
+            {
+                tmpBorder +=
+                    (i == 0 && j == 0) ? UPLEFTCOTNER :
+                    (i == 0 && j == MaxWidth) ? UPRIGHTCORNER :
+                    (i == MaxHeight && j == MaxWidth) ? DOWNRIGHTCORNER :
+                    (i == MaxHeight && j == 0) ? DOWNLEFTCORNER :
+                    ((i == 0 || i == MaxHeight) && j < MaxWidth) ? HORISONTALINE :
+                    (i > 0 && (j == 0 || j == MaxWidth)) ? VERTICALINE : ' ';
+
+            }
+            tmpBorder += "\n";
         }
+        Border.text = tmpBorder;
     }
 
     private void RenderMenu()
@@ -134,21 +145,21 @@ public class GRUBMenu : MonoBehaviour
 
     private string RenderLine(string str,bool selected)
     {
-        string TMPline = "" + VERTICALINE;
+        string TMPline = " ";
         if (selected)
         {
             TMPline += "<color=black>";
         }
         TMPline += str;
-        for (int i = 0; i <= MaxWidth-2-str.Length; i++)
-        {
-            TMPline += " ";
-        }
+        //for (int i = 0; i <= MaxWidth-2-str.Length; i++)
+        //{
+        //    TMPline += " ";
+        //}
         if (selected)
         {
-            TMPline += "</color>";
+            TMPline += /*" Select ID: " + SelectId + " " + _selectId +*/ "</color>";
         }
-        return TMPline + VERTICALINE;
+        return TMPline; //+ VERTICALINE;
     }
 
     private string RenderBackgroundMenu(bool selected)
@@ -173,11 +184,11 @@ public class GRUBMenu : MonoBehaviour
     {
         if (Input.GetKeyDown(KeyCode.DownArrow) || Input.GetKeyDown(KeyCode.S))
         {
-            SelectId++;
+            OnSelectIdChange(SelectId + 1);
         }
         if (Input.GetKeyDown(KeyCode.UpArrow) || Input.GetKeyDown(KeyCode.W))
         {
-            SelectId--;
+            OnSelectIdChange(SelectId - 1);
         }
     }
 }

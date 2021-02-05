@@ -37,14 +37,21 @@ public class Player : MonoBehaviour
         {
             transform.Translate(Vector3.right * Sensitivity);
         }
-
-        yaw += speedH * Input.GetAxis("Mouse X");
-        pitch -= speedV * Input.GetAxis("Mouse Y");
+        if (Input.GetKey(KeyCode.Q))
+        {
+            yaw -= speedH;
+        }
+        if (Input.GetKey(KeyCode.E))
+        {
+            yaw += speedH;
+        }
+        //yaw += speedH * Input.GetAxis("Mouse X");
+        //pitch -= speedV * Input.GetAxis("Mouse Y");
 
         transform.eulerAngles = new Vector3(0.0f, yaw, 0.0f);
-        PlayerCamera.transform.eulerAngles = new Vector3(pitch, yaw, 0.0f);
+        //PlayerCamera.transform.eulerAngles = new Vector3(pitch, yaw, 0.0f);
 
-        
+
     }
 
     
